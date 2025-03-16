@@ -1,0 +1,199 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    background-color: #F8F9FA;
+    color: #212529;
+}
+
+.content {
+    margin-left: 270px; /* Ajusta o conteúdo para não ficar sob a sidebar */
+    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
+    padding: 20px;
+    max-width: calc(100% - 250px); /* Garante que não ultrapasse o menu */
+}
+
+.sidebar {
+    position: fixed; /* Fixa a sidebar na tela */
+    top: 0;
+    left: 0;
+    width: 230px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh; /* Garante que a sidebar ocupe toda a altura da tela */
+    overflow-y: auto; /* Garante que a barra de rolagem apareça quando necessário */
+    scrollbar-width: thin; /* Adiciona uma barra de rolagem mais fina */
+    scrollbar-color: #007BFF #333; /* Cor da barra de rolagem */
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+   
+}
+
+/* Efeito hover */
+.sidebar ul li a:hover {
+    background-color: #007BFF;
+}
+
+.sidebar ul li a.active {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+
+/* Garante que o conteúdo ocupe todo o espaço disponível */
+.content {
+    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
+    padding: 20px;
+    max-width: calc(100% - 250px); /* Garante que não ultrapasse o menu */
+}
+.main-container {
+    display: flex;
+    width: 100vw; /* Ocupa toda a largura da tela */
+}
+
+
+
+h1, h2 {
+    color: #333;
+    border-bottom: 2px solid #EEEEEE;
+    padding-bottom: 5px;
+}
+
+/* Seção do exemplo prático */
+.example {
+    background: #e3f2fd;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões interativos */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Texto ajustável */
+#texto-ajustavel {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Seção do código-fonte */
+.code-box {
+    background: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    border-left: 5px solid #28A745;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos */
+.texto-normal {
+    font-size: 16px;
+}
+
+.texto-grande {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.caixa-responsiva {
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .caixa-responsiva {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa-responsiva {
+        width: 90%;
+    }
+}
+
+input:focus {
+    outline: 3px solid #007BFF;
+}
+
+.botao-grande {
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        min-height: auto;
+    }
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+    

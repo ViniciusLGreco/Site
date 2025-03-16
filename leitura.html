@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilidade de Leitura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tipografia.html">Tipografia e Textos</a></li>
+                <li><a href="tempo.html">Tempo e Interação</a></li>
+                <li><a href="estresse.html">Redução de Estresse</a></li>
+                <li><a href="erros.html">Prevenção de Erros</a></li>
+                <li><a href="seguranca.html">Segurança</a></li>
+                <li><a href="responsivo.html">Design Responsivo</a></li>
+                <li><a href="personalizacao.html">Personalização</a></li>
+                <li><a href="inteligencia.html">Acessibilidade com IA</a></li>
+                <li><a href="leitura.html" class="active">Facilitação de Leitura</a></li>
+                <li><a href="gestos.html">Suporte a Gestos</a></li>
+                <li><a href="notificacoes.html">Notificações</a></li>
+                <li><a href="visao.html">Adaptação para Visão</a></li>
+                <li><a href="teclado.html">Navegação por Teclado</a></li>
+                <li><a href="pagamento.html">Pagamentos</a></li>
+                <li><a href="usabilidade.html">Testes de Usabilidade</a></li>
+                <li><a href="servicos.html">Serviços Essenciais</a></li>
+                <li><a href="experiencia.html">Níveis de Experiência</a></li>
+                <li><a href="movimentos.html">Suporte a Movimentos</a></li>
+                <li><a href="controle.html">Controle da Interface</a></li>
+                <li><a href="auditivo.html">Recursos Auditivos</a></li>
+                <li><a href="tecnologia.html">Tecnologia Assistiva</a></li>
+                <li><a href="dispositivos.html">Dispositivos Antigos</a></li>
+                <li><a href="fraudes.html">Proteção Contra Fraudes</a></li>
+                <li><a href="social.html">Engajamento Social</a></li>
+          </ul>  
+        </nav>
+
+        <main class="content">
+            
+            <!-- Seção de Título e Explicação -->
+            <section class="section">
+                <h1>Facilidade de Leitura e Consumo de Conteúdo</h1>
+                <p>O conteúdo deve ser legível, bem espaçado e escaneável.</p>
+            </section>
+
+            <!-- Seção de Exemplo Prático -->
+            <section class="example">
+                <h2>Exemplo: Ajuste de Espaçamento</h2>
+                <p id="texto-espacamento">Este texto pode ter o espaçamento ajustado para facilitar a leitura.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellendus in quo quasi, quos tenetur ut animi, aperiam deserunt iste molestias. Deleniti molestiae doloremque atque iste eligendi, necessitatibus aspernatur repudiandae!
+                    Ab, harum aut, cumque perferendis, facere neque rerum amet iure fugiat exercitationem pariatur. Vero libero minima nesciunt totam aspernatur perferendis repellat temporibus optio. Laboriosam iure veniam ex earum, minima labore!
+                    Amet aut sint, optio est architecto vero culpa porro laboriosam mollitia consequatur molestiae iusto sunt nisi dolore iure qui repellat nam itaque rerum aperiam non neque? Enim dolores quas optio.
+                </p>
+                <button onclick="aumentarEspacamento()">Aumentar Espaçamento</button>
+                <button onclick="diminuirEspacamento()">Diminuir Espaçamento</button>
+            </section>
+
+            <!-- Seção de Código-Fonte -->
+            <section class="code-box">
+                <h2>Código-Fonte Utilizado</h2>
+                <pre>
+HTML:
+&lt;button onclick="aumentarEspacamento()"&gt;Aumentar Espaçamento&lt;/button&gt;
+&lt;button onclick="diminuirEspacamento()"&gt;Diminuir Espaçamento&lt;/button&gt;
+&lt;p id="texto-espacamento"&gt;Este texto pode ter o espaçamento ajustado para facilitar a leitura.
+Lorem ipsum dolor sit amet. Est distinctio enim qui laborum quos et doloremque quia qui corrupti
+asperiores aut eius dolore id temporibus perspiciatis et quam labore. 
+Aut sint minima nam labore libero aut velit nisi qui quia eius! Aut galisum quia et asperiores autem 
+est nesciunt ipsa. Qui Quis voluptatem et delectus internos qui odit veritatis aut facilis officiis et ipsa officiis!&lt;/p&gt;
+
+JS:
+function aumentarEspacamento() {
+    document.getElementById("texto-espacamento").style.lineHeight = "2";
+}
+
+function diminuirEspacamento() {
+    document.getElementById("texto-espacamento").style.lineHeight = "1.2";
+}
+                </pre>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
