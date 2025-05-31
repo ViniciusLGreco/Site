@@ -307,6 +307,9 @@ input:focus {
     #toggleSidebar {
         display: block;
     }
+    .mobile-hide {
+        display: none;
+  }
 }
 
 /* ===== AJUSTES DE ALTURA E SCROLL ===== */
